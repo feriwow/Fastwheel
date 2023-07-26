@@ -1,0 +1,47 @@
+[
+    {
+        "problem": "Ban Pecah",
+        "userId": 1,
+        "partnerId": 1,
+        "status": "active",
+        "location": {
+            "lng": "-6.942981263106864",
+            "lat": "107.59278847659893"
+        },
+        "totalPrice": 1500000,
+        "paymentStatus": "isPaid",
+        "car": "Toyota Inova",
+        "carType": "Suv",
+        "license": "B 2045 HUG"
+    },
+    {
+        "problem": "Aki Soak",
+        "userId": 3,
+        "partnerId": 2,
+        "status": "active",
+        "location": {
+            "lng": "-6.9439994342171225",
+            "lat": "107.5904275402039"
+        },
+        "totalPrice": 600000,
+        "paymentStatus": "isPaid",
+        "car": "Honda Civic",
+        "carType": "Sedan",
+        "license": "B 1 TCH"
+    },
+    {
+        "problem": "Oli Bocor",
+        "userId": 2,
+        "partnerId": 1,
+        "status": "active",
+        "location": {
+            "lng": "-6.940669415817259",
+            "lat": "107.5925576773082"
+        },
+        "totalPrice": 145000,
+        "paymentStatus": "isPaid",
+        "car": "Daihatsu Xenia",
+        "carType": "Suv",
+        "license": "F 112 AUN"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "partnerName": "AutoCraft Pro",
+        "email": "autocraft@pro.com",
+        "password": "rahasia",
+        "phoneNumber": "0808080808",
+        "address": "Jl. Ciputat Raya No.12, RT.2/RW.10, Kby. Lama Utara, Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240",
+        "location": {
+            "lng": "-6.252347204645779",
+            "lat": "106.7778840156567"
+        },
+        "imageUrl": "https://www.wikaautocare.com/wp-content/uploads/2020/11/tips-sukses-bengkel-mobil-1024x576.jpg"
+    },
+    {
+        "partnerName": "Precision Motors",
+        "email": "precision@motor.com",
+        "password": "rahasia",
+        "phoneNumber": "0868686866",
+        "address": "Jl. Arteri Pd. Indah No.5-79, RT.1/RW.5, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240",
+        "location": {
+            "lng": "-6.253850559899451",
+            "lat": "106.78189075315454"
+        },
+        "imageUrl": "https://image.indonetwork.co.id/normal/categories/1520222067.jpg"
+    },
+    {
+        "partnerName": "Speed & Service Garage",
+        "email": "speed@service.com",
+        "password": "rahasia",
+        "phoneNumber": "0845454545",
+        "address": "Jl. Praja Dalam G No.5, RW.5, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240",
+        "location": {
+            "lng": "-6.254650685568328",
+            "lat": "106.78227945714093"
+        },
+        "imageUrl": "https://reparasimobil.com/wp-content/uploads/2020/11/cibubur.jpeg"
+    },
+    {
+        "partnerName": "The Car Doctor's Garage",
+        "email": "car@doctor.com",
+        "password": "rahasia",
+        "phoneNumber": "0898989898",
+        "address": "Jl. Cendrawasih I No.37, RT.12/RW.1, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240",
+        "location": {
+            "lng": "-6.254723373007098",
+            "lat": "106.77916537290982"
+        },
+        "imageUrl": "https://3.bp.blogspot.com/-xbXQa5ciTZs/Vf_JQjQKZSI/AAAAAAAAABg/Ia1F98CFQy4/s1600/Publication1.jpg"
+    }
+]

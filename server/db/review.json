@@ -1,0 +1,14 @@
+[
+    {
+        "userId": 1,
+        "partnerId": 1,
+        "review": "pelayanannya good banget >__<",
+        "rating": 5
+    },
+    {
+        "userId": 2,
+        "partnerId": 1,
+        "review": "nice customer service :D",
+        "rating": 4
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "username": "jahn dae",
+        "email": "d@mail.com",
+        "password": "12345",
+        "phoneNumber": "0808080808"
+    },
+    {
+        "username": "michael justin",
+        "email": "js@mail.com",
+        "password": "12345",
+        "phoneNumber": "0807080707"
+    },
+    {
+        "username": "keanu reeves",
+        "email": "k@mail.com",
+        "password": "12345",
+        "phoneNumber": "0880808008"
+    }
+]

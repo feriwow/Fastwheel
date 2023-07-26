@@ -1,0 +1,62 @@
+[
+    {
+        "productName": "Ban bulet",
+        "type": "Ecopia",
+        "price": 750000,
+        "image": "https://s.garasi.id/q80/store_products/06f12a60-21e3-4313-893d-764cf7b7dfb6.jpeg"
+    },
+    {
+        "productName": "Ban A T",
+        "type": "Off Road",
+        "price": 1600000,
+        "image": "https://dcadprod.azureedge.net/b2c-experience-bfg-production/attachments/cjwgdhelv012n0oqk4x1doquo-bfgoodrich-all-terrain-sup-t-a-ko2-sup-home-background-md.one-third.png"
+    },
+    {
+        "productName": "Michelin LTX A/T2",
+        "type": "Highway Terrain",
+        "price": 1750000,
+        "image": "https://images.tokopedia.net/img/cache/700/VqbcmM/2023/4/3/b69d1890-8b2d-42b9-a501-ba524987dc85.jpg"
+    },
+    {
+        "productName": "Shell Helix HX3",
+        "type": "Oli Mobil",
+        "price": 145000,
+        "image": "https://static.bmdstatic.com/pk/product/medium/SHELL-Helix-HX3-SKU01616680-2016330145947.jpg"
+    },
+    {
+        "productName": "Total Quartz 9000",
+        "type": "Oli Mobil",
+        "price": 309000,
+        "image": "https://images.tokopedia.net/img/cache/700/product-1/2017/11/13/0/0_c3d06510-2961-49f6-998a-1569a13950c5_639_1044.jpg"
+    },
+    {
+        "productName": "Fastron Gold",
+        "type": "Oli Mobil",
+        "price": 700000,
+        "image": "https://mobeng.id/wp-content/uploads/2019/08/fastron-5w30.png"
+    },
+    {
+        "productName": "Aki GS hybrid NS60",
+        "type": "Aki Hybrid",
+        "price": 650000,
+        "image": "https://images.tokopedia.net/img/cache/700/product-1/2017/3/20/16933457/16933457_56dc8cd9-d76c-429a-8e29-7e8721fbea46_640_480.jpg"
+    },
+    {
+        "productName": "Aki GS Astra Calsium",
+        "type": "Aki Calsium",
+        "price": 1300000,
+        "image": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//89/MTA-4245182/gs_astra_gs_astra_105d31l_calcium_gold_aki_mobil_full02_i1r7om16.jpg"
+    },
+    {
+        "productName": "Aki MotoBatt GEL MTZ5S",
+        "type": "Aki Gel",
+        "price": 1700000,
+        "image": "https://cf.shopee.co.id/file/ca964bb094c762f73717cd8610cd588e"
+    },
+    {
+        "productName": "Aki GS Gold Shine",
+        "type": "Aki Basah",
+        "price": 815000,
+        "image": "https://cf.shopee.co.id/file/c3fa4a9e528e0021e6e173faf1cb60e1"
+    }
+]

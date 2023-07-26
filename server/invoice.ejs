@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom Style -->
+
+    <style>
+        :root {
+            --body-bg: rgb(106, 104, 104);
+            --white: #ffffff;
+            --darkWhite: #ccc;
+            --black: #000000;
+            --dark: #615c60;
+            --themeColor: #22b8d1;
+            --pageShadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+        }
+
+        /* Font Include */
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+
+        body {
+            background-color: var(--body-bg);
+        }
+
+        .page {
+            background: var(--white);
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            /* box-shadow: var(--pageShadow); */
+        }
+
+        .page[size="A4"] {
+            width: 21cm;
+            height: 29.7cm;
+            overflow: hidden;
+        }
+
+        .bb {
+            border-bottom: 3px solid var(--darkWhite);
+        }
+
+        /* Top Section */
+        .top-content {
+            padding-bottom: 15px;
+        }
+
+        .logo img {
+            height: 150px;
+            width: 150px;
+        }
+
+        .top-left p {
+            margin: 0;
+        }
+
+        .top-left .graphic-path {
+            height: 40px;
+            position: relative;
+        }
+
+        .top-left .graphic-path::before {
+            content: "";
+            height: 20px;
+            background-color: var(--dark);
+            position: absolute;
+            left: 15px;
+            right: 0;
+            top: -15px;
+            z-index: 2;
+        }
+
+        .top-left .graphic-path::after {
+            content: "";
+            height: 22px;
+            width: 17px;
+            background: var(--black);
+            position: absolute;
+            top: -5px;
+            left: 6px;
+            transform: rotate(45deg);
+        }
+
+        .top-left .graphic-path p {
+            color: var(--white);
+            height: 40px;
+            left: 0;
+            right: -100px;
+            text-transform: uppercase;
+            background-color: var(--themeColor);
+            font: 26px;
+            z-index: 3;
+            position: absolute;
+            padding-left: 10px;
+        }
+
+        /* User Store Section */
+        .store-user {
+            padding-bottom: 20px;
+        }
+
+        .store-user p {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .store-user .address {
+            font-weight: 400;
+        }
+
+        .store-user h2 {
+            color: var(--themeColor);
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .extra-info p span {
+            font-weight: 400;
+        }
+
+        /* Product Section */
+        thead {
+            color: white;
+            background: #22b8d1;
+        }
+
+        .table td,
+        .table th {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        tr th:first-child,
+        tr td:first-child {
+            text-align: left;
+        }
+
+        .media img {
+            height: 60px;
+            width: 60px;
+        }
+
+        .media p {
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .media p.title {
+            font-weight: 600;
+        }
+
+        /* Balance Info Section */
+        .balance-info .table td,
+        .balance-info .table th {
+            padding: 0;
+            border: 0;
+        }
+
+        .balance-info tr td:first-child {
+            font-weight: 600;
+        }
+
+        tfoot {
+            border-top: 1px solid var(--darkWhite);
+        }
+
+        tfoot td {
+            font-weight: 600;
+        }
+
+        /* Cart BG */
+        .cart-bg {
+            height: 250px;
+            bottom: 10px;
+            left: -40px;
+            opacity: 0.3;
+            position: absolute;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            position: absolute;
+            bottom: 5px;
+            margin-top: 50px;
+            left: 75px;
+        }
+
+        footer hr {
+            margin-bottom: -25px;
+            border-top: 1px solid var(--darkWhite);
+        }
+
+        footer a {
+            color: var(--themeColor);
+        }
+
+        footer p {
+            padding: 6px;
+            border: 3px solid var(--darkWhite);
+            background-color: var(--white);
+            display: inline-block;
+        }
+    </style>
+
+    <title>Invoice..!</title>
+</head>
+
+<body>
+    <div class="my-5 page" size="A4">
+        <div class="p-5">
+            <section class="top-content bb d-flex justify-content-between">
+                <div class="logo" style="margin-top: 5px;">
+                    <img src="https://i.ibb.co/7vSy59Q/fast2.png" alt="Logo" class="img-fluid">
+                </div>
+                <div class="top-left">
+                    <div class="graphic-path">
+                        <p>Invoice</p>
+                    </div>
+                    <div class="position-relative">
+                        <p>Invoice No. <span><%= "TRANSACTION_" + "24007" + myProducts[0].orderId %></span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="store-user mt-1">
+                <div class="col-10">
+                    <div class="row bb pb-3">
+                        <div class="col-7">
+                            <p>Partner,</p>
+                            <h2><%= findPartner.partnerName %></h2>
+                            <p class="address"><%= findPartner.email %>, <br> <%= findPartner.phoneNumber %>, <br> <%= findPartner.address %> </p>
+                            
+                        </div>
+                        <div class="col-5">
+                            <p>Customer,</p>
+                            <h2><%= order[0].User.username %></h2>
+                            <p class="address"><%= order[0].User.email %>, <br> <%= order[0].User.phoneNumber %> </p>
+                        </div>
+                    </div>
+                    <div class="row extra-info pt-3">
+                        <div class="col-7">
+                            <p>Payment Method: <span>Bank Transfer</span></p>
+                            <p>Order Number: <span><%= "#" + myProducts[0].orderId %></span></p>
+                        </div>
+                        <div class="col-5">
+                            <p>Deliver Date: <span><%= new Date(myProducts[0].Order.createdAt).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) %></span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-area mt-1">
+                <table class="table table-hover">
+                    <div style="background-color: #42d122; color: #000000;">
+                        <thead>
+                            <tr>
+                                <td>Item Description</td>
+                                <td>Price</td>
+                                <td>Quantity</td>
+                                <td>Total</td>
+                            </tr>
+                        </thead>
+                    </div>
+                    <tbody>
+                        <% for (let i = 0; i < myProducts.length; i++) { %>
+                        <tr>
+                            <td>
+                                <div class="media">
+                                    <img class="mr-3 img-fluid"
+                                        src="<%= myProducts[i].Product.image %>"
+                                        alt="Product 01">
+                                    <div class="media-body">
+                                        <p class="mt-0 title"><%= myProducts[i].Product.productName %></p>
+                                        Type : <%= myProducts[i].Product.type %>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><%= myProducts[i].Product.price.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' }) %></td>
+                            <td><%= myProducts[i].quantity %></td>
+                            <td><%= (myProducts[i].Product.price * myProducts[i].quantity).toLocaleString('id-ID', { style: 'currency', currency: 'IDR' }) %></td>
+                        </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="balance-info">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="m-0 font-weight-bold"> Problem: </p>
+                        <p><%= myProducts[0].Order.problem %></p>
+                        <p class="m-0 font-weight-bold"> Car / Lisence: </p>
+                        <p><%= myProducts[0].Order.car %> <%= myProducts[0].Order.carType %> / <%= myProducts[0].Order.license %></p>
+                    </div>
+                    <div class="col-4">
+                        <table class="table border-0 table-hover">
+                                <tr>
+                                    <td>Total:</td>
+                                    <td><%= totalPrice.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' }) %>,-</td>
+                                </tr>
+                            <!-- </tfoot> -->
+                        </table>
+
+                        <!-- Signature -->
+                        <div class="col-12">
+                            <img src="https://i.ibb.co/4mpcVjc/signature.png" class="img-fluid" alt="">
+                            <p class="text-center m-0"> Director Signature </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cart BG -->
+            <img src="cart.jpg" class="img-fluid cart-bg" alt="">
+
+            <footer>
+                <hr>
+                <p class="m-0 text-center">
+                    View THis Invoice Online At - <a href="#!"> invoice/fast007offcial.com/#868 </a>
+                </p>
+                <div class="social pt-3">
+                    <span class="pr-2">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>0123456789</span>
+                    </span>
+                    <span class="pr-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>fast007officiall@gmail.com</span>
+                    </span>
+                    <span class="pr-2">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>/fast007</span>
+                    </span>
+                    <span class="pr-2">
+                        <i class="fab fa-youtube"></i>
+                        <span>/fast007</span>
+                    </span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

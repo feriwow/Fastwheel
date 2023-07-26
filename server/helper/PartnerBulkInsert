@@ -1,0 +1,43 @@
+const { User, Partner, Order } = require('../models')
+const { hashPassword } = require('./bcrypt')
+
+async function bulkInsertPartner() {
+    await Partner.destroy({
+        truncate: true,
+        restartIdentity: true,
+        cascade: true
+    })
+    const geojson = {
+        type: "Point",
+        coordinates: ["107.59278847659893", "-6.942981263106864"],
+    };
+    const location = JSON.stringify(geojson);
+    const dataPartner = await Partner.create(
+        {
+            partnerName: "Bengkel gaya",
+            email: "bengkel@pro.com",
+            password: "rahasia",
+            phoneNumber: "0808080808",
+            address: "Jl. Tamani",
+            imageUrl: "https://teknisimobil.com/wp-content/uploads/2018/01/Kunci-yang-Diperlukan-di-Bengkel-Mobil-3.jpg"
+        }
+    )
+  
+    await Order.create(
+        {
+            problem: "Ban Pecah",
+            userId: 1,
+            partnerId: 1,
+            status: "active",
+            location:location,
+            totalPrice: 1500000,
+            paymentStatus: "isPaid",
+            car: "Toyota Inova",
+            carType: "Suv",
+            license: "B 2045 HUG"
+        }
+    )
+    return dataPartner
+}
+
+module.exports = bulkInsertPartner
